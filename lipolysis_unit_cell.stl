@@ -1,0 +1,170 @@
+solid METASURFACE_UNIT_CELL
+  facet normal 0.000000e+00 0.000000e+00 -1.000000e+00
+    outer loop
+      vertex -275.0000 -275.0000 -200.0000
+      vertex 275.0000 275.0000 -200.0000
+      vertex 275.0000 -275.0000 -200.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 0.000000e+00 -1.000000e+00
+    outer loop
+      vertex -275.0000 -275.0000 -200.0000
+      vertex -275.0000 275.0000 -200.0000
+      vertex 275.0000 275.0000 -200.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 0.000000e+00 1.000000e+00
+    outer loop
+      vertex -275.0000 -275.0000 0.0000
+      vertex 275.0000 -275.0000 0.0000
+      vertex 275.0000 275.0000 0.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 0.000000e+00 1.000000e+00
+    outer loop
+      vertex -275.0000 -275.0000 0.0000
+      vertex 275.0000 275.0000 0.0000
+      vertex -275.0000 275.0000 0.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 -1.000000e+00 0.000000e+00
+    outer loop
+      vertex -275.0000 -275.0000 -200.0000
+      vertex 275.0000 -275.0000 -200.0000
+      vertex 275.0000 -275.0000 0.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 -1.000000e+00 0.000000e+00
+    outer loop
+      vertex -275.0000 -275.0000 -200.0000
+      vertex 275.0000 -275.0000 0.0000
+      vertex -275.0000 -275.0000 0.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 1.000000e+00 0.000000e+00
+    outer loop
+      vertex 275.0000 275.0000 -200.0000
+      vertex -275.0000 275.0000 -200.0000
+      vertex -275.0000 275.0000 0.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 1.000000e+00 0.000000e+00
+    outer loop
+      vertex 275.0000 275.0000 -200.0000
+      vertex -275.0000 275.0000 0.0000
+      vertex 275.0000 275.0000 0.0000
+    endloop
+  endfacet
+  facet normal -1.000000e+00 0.000000e+00 0.000000e+00
+    outer loop
+      vertex -275.0000 275.0000 -200.0000
+      vertex -275.0000 -275.0000 -200.0000
+      vertex -275.0000 -275.0000 0.0000
+    endloop
+  endfacet
+  facet normal -1.000000e+00 0.000000e+00 0.000000e+00
+    outer loop
+      vertex -275.0000 275.0000 -200.0000
+      vertex -275.0000 -275.0000 0.0000
+      vertex -275.0000 275.0000 0.0000
+    endloop
+  endfacet
+  facet normal 1.000000e+00 0.000000e+00 0.000000e+00
+    outer loop
+      vertex 275.0000 -275.0000 -200.0000
+      vertex 275.0000 275.0000 -200.0000
+      vertex 275.0000 275.0000 0.0000
+    endloop
+  endfacet
+  facet normal 1.000000e+00 0.000000e+00 0.000000e+00
+    outer loop
+      vertex 275.0000 -275.0000 -200.0000
+      vertex 275.0000 275.0000 0.0000
+      vertex 275.0000 -275.0000 0.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 0.000000e+00 -1.000000e+00
+    outer loop
+      vertex -155.0000 -155.0000 0.0000
+      vertex 155.0000 155.0000 0.0000
+      vertex 155.0000 -155.0000 0.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 0.000000e+00 -1.000000e+00
+    outer loop
+      vertex -155.0000 -155.0000 0.0000
+      vertex -155.0000 155.0000 0.0000
+      vertex 155.0000 155.0000 0.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 0.000000e+00 1.000000e+00
+    outer loop
+      vertex -155.0000 -155.0000 420.0000
+      vertex 155.0000 -155.0000 420.0000
+      vertex 155.0000 155.0000 420.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 0.000000e+00 1.000000e+00
+    outer loop
+      vertex -155.0000 -155.0000 420.0000
+      vertex 155.0000 155.0000 420.0000
+      vertex -155.0000 155.0000 420.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 -1.000000e+00 0.000000e+00
+    outer loop
+      vertex -155.0000 -155.0000 0.0000
+      vertex 155.0000 -155.0000 0.0000
+      vertex 155.0000 -155.0000 420.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 -1.000000e+00 0.000000e+00
+    outer loop
+      vertex -155.0000 -155.0000 0.0000
+      vertex 155.0000 -155.0000 420.0000
+      vertex -155.0000 -155.0000 420.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 1.000000e+00 0.000000e+00
+    outer loop
+      vertex 155.0000 155.0000 0.0000
+      vertex -155.0000 155.0000 0.0000
+      vertex -155.0000 155.0000 420.0000
+    endloop
+  endfacet
+  facet normal 0.000000e+00 1.000000e+00 0.000000e+00
+    outer loop
+      vertex 155.0000 155.0000 0.0000
+      vertex -155.0000 155.0000 420.0000
+      vertex 155.0000 155.0000 420.0000
+    endloop
+  endfacet
+  facet normal -1.000000e+00 0.000000e+00 0.000000e+00
+    outer loop
+      vertex -155.0000 155.0000 0.0000
+      vertex -155.0000 -155.0000 0.0000
+      vertex -155.0000 -155.0000 420.0000
+    endloop
+  endfacet
+  facet normal -1.000000e+00 0.000000e+00 0.000000e+00
+    outer loop
+      vertex -155.0000 155.0000 0.0000
+      vertex -155.0000 -155.0000 420.0000
+      vertex -155.0000 155.0000 420.0000
+    endloop
+  endfacet
+  facet normal 1.000000e+00 0.000000e+00 0.000000e+00
+    outer loop
+      vertex 155.0000 -155.0000 0.0000
+      vertex 155.0000 155.0000 0.0000
+      vertex 155.0000 155.0000 420.0000
+    endloop
+  endfacet
+  facet normal 1.000000e+00 0.000000e+00 0.000000e+00
+    outer loop
+      vertex 155.0000 -155.0000 0.0000
+      vertex 155.0000 155.0000 420.0000
+      vertex 155.0000 -155.0000 420.0000
+    endloop
+  endfacet
+endsolid METASURFACE_UNIT_CELL

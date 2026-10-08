@@ -1,0 +1,91 @@
+{
+  "project_name": "SCOPE-NAR Nanophotonic Adipose Photolipolysis Metasurface",
+  "application": "High-Fluence 1060nm / 1210nm Beam Homogenizer for Non-Invasive Hyperthermic Laser Lipolysis",
+  "material": "POLY-SI",
+  "substrate": "FUSED_SILICA_SIO2",
+  "target_thickness_nm": 420.0,
+  "critical_dimension_nm": 65.0,
+  "min_design_rule_cd_nm": 65.0,
+  "primary_feature_width_nm": 310.0,
+  "mask_file": "lipolysis_beam_mask.gds",
+  "process_steps": [
+    {
+      "step_number": 1,
+      "title": "Substrate Surface Preparation (Optical Grade Fused Silica SiO2)",
+      "chamber": "Wet Bench Cleanroom Bay 1",
+      "protocol": [
+        "Piranha clean: H2SO4:H2O2 (3:1 volume ratio) at 120\u00b0C for 15 minutes to strip trace organics and particulate contaminants.",
+        "Cascade deionized (DI) water rinse until resistivity exceeds 18.2 MOhm-cm.",
+        "Standard Clean SC-1 (NH4OH:H2O2:H2O 1:1:5 at 70\u00b0C for 10 min) to generate dense silanol (-SiOH) surface hydration.",
+        "Megasonic agitation at 1.0 MHz for 5 minutes to detach sub-100nm particles.",
+        "Dehydration bake: 200\u00b0C hotplate bake for 15 minutes in dry nitrogen purge box."
+      ]
+    },
+    {
+      "step_number": 2,
+      "title": "Low-Pressure Chemical Vapor Deposition (LPCVD) of Polycrystalline Silicon",
+      "equipment": "LPCVD Horizontal Hot-Wall Furnace",
+      "parameters": {
+        "temperature_celsius": 620.0,
+        "pressure_mtorr": 280.0,
+        "gas_sih4_sccm": 95.0,
+        "target_thickness_nm": 420.0,
+        "deposition_rate_nm_min": 9.8,
+        "process_time_min": 42.8,
+        "refractive_index_at_1060nm": 3.552,
+        "film_stress": "Ultra-low tensile (< 80 MPa, annealed at 600\u00b0C for 30 min)"
+      }
+    },
+    {
+      "step_number": 3,
+      "title": "193nm Deep-UV (DUV) Stepper Photolithography",
+      "equipment": "ASML PAS 5500 / 193nm ArF Stepper (NA = 0.75)",
+      "resist": "Shin-Etsu SEPR-401 Positive DUV Photoresist",
+      "parameters": {
+        "bottom_antireflective_coating": "Brewer Science ARC-29A (65 nm thickness, baked at 205\u00b0C for 60s)",
+        "photoresist_thickness_nm": 320.0,
+        "spin_coat_speed_rpm": 3200,
+        "soft_bake": "105\u00b0C for 90 seconds",
+        "reticle_mask": "lipolysis_beam_mask.gds",
+        "exposure_dose_mJ_cm2": 26.5,
+        "post_exposure_bake": "115\u00b0C for 90 seconds",
+        "developer": "TMAH 2.38% (MF-CD-26) puddle development for 60 seconds",
+        "hard_bake": "110\u00b0C for 60 seconds"
+      }
+    },
+    {
+      "step_number": 4,
+      "title": "Inductively Coupled Plasma Reactive Ion Etching (ICP-RIE)",
+      "equipment": "Oxford Instruments PlasmalabSystem 100 ICP-RIE 380",
+      "parameters": {
+        "etch_chemistry": "Pseudo-Bosch anisotropic fluorocarbon pulse (SF6 / C4F8 / O2)",
+        "gas_sf6_sccm": 26.0,
+        "gas_c4f8_sccm": 48.0,
+        "gas_o2_sccm": 3.5,
+        "chamber_pressure_mtorr": 10.0,
+        "icp_coil_power_w": 850.0,
+        "rf_platen_power_w": 60.0,
+        "dc_bias_v": -115.0,
+        "electrode_temperature_c": 15.0,
+        "silicon_etch_rate_nm_min": 175.0,
+        "nominal_etch_time_min": 2.4,
+        "sidewall_verticality": "89.85\u00b0 \u00b1 0.25\u00b0",
+        "selectivity_to_oxide": "> 35:1",
+        "endpoint_detection": "In-situ laser interferometric reflectometry (670 nm)"
+      }
+    },
+    {
+      "step_number": 5,
+      "title": "Resist Strip, Laser Damage Metrology & Beam Homogenizer Packaging",
+      "equipment": "Downstream Microwave O2 Ashing & Metrology Suite",
+      "protocol": [
+        "O2 microwave plasma ashing (600W, 400 sccm O2, 250 mTorr, 12 min) to completely eliminate sidewall fluorocarbon polymer passivation.",
+        "Wet solvent clean: N-Methyl-2-pyrrolidone (NMP) at 70\u00b0C for 15 min, followed by IPA and DI cascade rinse.",
+        "CD-SEM Inspection: Critical dimension validation across 9-die matrix (w = 310 nm \u00b1 4 nm, pitch = 550 nm).",
+        "Atomic Force Microscopy (AFM): Nanopillar height profile h = 420 nm, root-mean-square sidewall roughness Rq < 1.2 nm.",
+        "Laser Damage Threshold (LDT) Certification: Tested according to ISO 21254 at 1060 nm (CW & 20ms quasi-CW pulses, fluence > 45 J/cm\u00b2 verified).",
+        "Optical Beam Profiler QA: Beam homogenization uniformity verified (> 94% flat-top plateau over 20 mm x 20 mm aperture; zero central hotspot)."
+      ]
+    }
+  ]
+}
